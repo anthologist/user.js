@@ -14,13 +14,13 @@
 // NOTICE: Disabling ServiceWorkers breaks functionality on some sites (Google Street View...)
 // Unknown security implications
 // CVE-2016-5259, CVE-2016-2812, CVE-2016-1949, CVE-2016-5287 (fixed)
-user_pref("dom.serviceWorkers.enabled",				false);
+// user_pref("dom.serviceWorkers.enabled",				false); //edited
 
 // PREF: Disable Web Workers
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers
 // https://www.w3schools.com/html/html5_webworkers.asp
 // NOTICE: Disabling Web Workers breaks "Download as ZIP" functionality on https://mega.nz/, WhatsApp Web and probably others
-user_pref("dom.workers.enabled",					false);
+// user_pref("dom.workers.enabled",					false); //edited
 
 // PREF: Disable web notifications
 // https://support.mozilla.org/t5/Firefox/I-can-t-find-Firefox-menu-I-m-trying-to-opt-out-of-Web-Push-and/m-p/1317495#M1006501
@@ -61,7 +61,7 @@ user_pref("dom.mozTCPSocket.enabled",				false);
 // http://kb.mozillazine.org/Dom.storage.enabled
 // https://html.spec.whatwg.org/multipage/webstorage.html
 // NOTICE-DISABLED: Disabling DOM storage is known to cause`TypeError: localStorage is null` errors
-//user_pref("dom.storage.enabled",		false);
+user_pref("dom.storage.enabled",		false); //edited
 
 // PREF: Disable leaking network/browser connection information via Javascript
 // Network Information API provides general information about the system's connection type (WiFi, cellular, etc.)
@@ -82,7 +82,7 @@ user_pref("media.peerconnection.enabled",			false);
 // PREF: Don't reveal your internal IP when WebRTC is enabled (Firefox >= 42)
 // https://wiki.mozilla.org/Media/WebRTC/Privacy
 // https://github.com/beefproject/beef/wiki/Module%3A-Get-Internal-IP-WebRTC
-user_pref("media.peerconnection.ice.default_address_only",	true); // Firefox 42-51
+// user_pref("media.peerconnection.ice.default_address_only",	true); // Firefox 42-51 //edited
 user_pref("media.peerconnection.ice.no_host",			true); // Firefox >= 52
 
 // PREF: Disable WebRTC getUserMedia, screen sharing, audio capture, video capture
@@ -218,11 +218,11 @@ user_pref("browser.search.geoip.url",				"");
 
 // PREF: Set Accept-Language HTTP header to en-US regardless of Firefox localization
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language
-user_pref("intl.accept_languages",				"en-us, en");
+//user_pref("intl.accept_languages",				"en-us, en"); //edited
 
 // PREF: Don't use OS values to determine locale, force using Firefox locale setting
 // http://kb.mozillazine.org/Intl.locale.matchOS
-user_pref("intl.locale.matchOS",				false);
+//user_pref("intl.locale.matchOS",				false); //edited
 
 // PREF: Don't use Mozilla-provided location-specific search engines
 user_pref("browser.search.geoSpecificDefaults",			false);
@@ -242,7 +242,7 @@ user_pref("keyword.enabled",					false);
 
 // PREF: Don't trim HTTP off of URLs in the address bar.
 // https://bugzilla.mozilla.org/show_bug.cgi?id=665580
-user_pref("browser.urlbar.trimURLs",				false);
+//user_pref("browser.urlbar.trimURLs",				false); //edited
 
 // PREF: Don't try to guess domain names when entering an invalid domain name in URL bar
 // http://www-archive.mozilla.org/docs/end-user/domain-guessing.html
@@ -305,7 +305,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
 // NOTICE: Disabling SVG support breaks many UI elements on many sites
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1216893
 // https://github.com/iSECPartners/publications/raw/master/reports/Tor%20Browser%20Bundle/Tor%20Browser%20Bundle%20-%20iSEC%20Deliverable%201.3.pdf#16
-user_pref("svg.disabled", true);
+//user_pref("svg.disabled", true); //edited
 
 
 // PREF: Disable video stats to reduce fingerprinting threat
@@ -414,7 +414,7 @@ user_pref("plugin.state.libgnome-shell-browser-plugin",		0);
 // PREF: Enable plugins click-to-play
 // https://wiki.mozilla.org/Firefox/Click_To_Play
 // https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
-user_pref("plugins.click_to_play",				true);
+//user_pref("plugins.click_to_play",				true); //edited
 
 // PREF: Updates addons automatically
 // https://blog.mozilla.org/addons/how-to-turn-off-add-on-updates/
@@ -501,7 +501,7 @@ user_pref("browser.uitour.enabled",				false);
 // https://support.mozilla.org/en-US/kb/tracking-protection-pbm
 // https://kontaxis.github.io/trackingprotectionfirefox/
 // https://feeding.cloud.geek.nz/posts/how-tracking-protection-works-in-firefox/
-user_pref("privacy.trackingprotection.enabled",			true);
+//user_pref("privacy.trackingprotection.enabled",			true); //edited
 user_pref("privacy.trackingprotection.pbmode.enabled",		true);
 
 // PREF: Enable contextual identity Containers feature (Firefox >= 52)
@@ -558,7 +558,7 @@ user_pref("app.update.enabled",                 true);
 // https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work
 // http://forums.mozillazine.org/viewtopic.php?f=39&t=2711237&p=12896849#p12896849
 // CIS 2.3.4
-user_pref("browser.safebrowsing.enabled",			true); // Firefox < 50
+//user_pref("browser.safebrowsing.enabled",			true); // Firefox < 50 //edited
 user_pref("browser.safebrowsing.phishing.enabled",		true); // firefox >= 50
 
 // PREF: Enable blocking reported attack sites
@@ -715,7 +715,7 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 // NOTICE: When Javascript is enabled, Websites can detect use of Private Browsing mode
 // NOTICE: Private browsing breaks Kerberos authentication
 // NOTICE: Disables "Containers" functionality (see below)
-user_pref("browser.privatebrowsing.autostart",			true);
+//user_pref("browser.privatebrowsing.autostart",			true); //edited
 
 // PREF: Do not download URLs for the offline cache
 // http://kb.mozillazine.org/Browser.cache.offline.enable

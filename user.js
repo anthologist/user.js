@@ -205,9 +205,10 @@ user_pref("camera.control.face_detection.enabled",		false);
 
 // PREF: Set the default search engine to DuckDuckGo (disabled)
 // https://support.mozilla.org/en-US/questions/948134
-//user_pref("browser.search.defaultenginename",		"DuckDuckGo");
-//user_pref("browser.search.order.1",				"DuckDuckGo");
-//user_pref("keyword.URL", 							"https://duckduckgo.com/html/?q=!+");  
+user_pref("browser.search.defaultenginename",		"DuckDuckGo"); //edited
+user_pref("browser.search.order.1",				"DuckDuckGo"); //edited
+//user_pref("keyword.URL", 							"https://duckduckgo.com/html/?q=!+");
+user_pref("browser.startup.homepage", "https://duckduckgo.com/?kl=it-it&kh=1&k1=-1"); //added
 
 // PREF: Disable GeoIP lookup on your address to set default search engine region
 // https://trac.torproject.org/projects/tor/ticket/16254

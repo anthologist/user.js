@@ -200,6 +200,8 @@ user_pref("dom.maxHardwareConcurrency",				2);
  * SECTION: Misc                                                              *
  ******************************************************************************/
 
+user_pref("browser.tabs.closeWindowWithLastTab",    false);
+
 // PREF: Disable face detection
 user_pref("camera.control.face_detection.enabled",		false);
 
